@@ -1,3 +1,70 @@
+/*
+  Media Queries for Responsive Design
+  Media queries help make your website look good on different screen sizes,
+  like phones (small screens) and computers (large screens).
+*/
+
+/* This media query applies styles when the screen is 600px wide or less (like on most phones) */
+@media (max-width: 600px) {
+  /* Make hero section padding smaller on small screens */
+  .hero {
+    padding: 32px 8px;
+    font-size: 1em;
+  }
+
+  /* Make headline font size smaller so it fits on small screens */
+  .hero h1 {
+    font-size: 1.4em;
+  }
+
+  /* Make subheadline font size smaller */
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Make story and call-to-action sections have less padding */
+  .real-impact,
+  .call-to-action {
+    padding: 14px 8px;
+  }
+
+  /* Make impact story image smaller and stack above the text */
+  .impact-content {
+    display: block; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .impact-image {
+    width: 90%;    /* Make image take up most of the width */
+    max-width: 220px;
+  }
+}
+
+/* This media query applies styles when the screen is wider than 600px (like on tablets and computers) */
+@media (min-width: 601px) {
+  /* Show image and text side by side in the impact story */
+  .impact-content {
+    display: flex;           /* Place items in a row */
+    align-items: center;     /* Vertically center items */
+    justify-content: center; /* Center the whole group */
+    gap: 28px;               /* Space between image and text */
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .impact-image {
+    width: 300px;
+  }
+}
+/* Make the Call to Action section heading white */
+.call-to-action h2 {
+  color: #fff;
+}
+/* Real Impact Section Title Styles */
+.real-impact h2 {
+  color: #FFC907;
+}
 /* Make the hero section larger so an image fits */
 .hero {
   width: 100%;
@@ -35,7 +102,7 @@ Fonts:
 /* Set up the main font and background color for the whole page */
 body {
   background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', 'Avenir';
   margin: 0;
   padding: 0;
   color: #222;
@@ -85,10 +152,11 @@ section {
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
 }
 
-/* Story Section Styles */
-.story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
+
+/* Real Impact Section Styles */
+.real-impact {
+  background-color: #222222;
+  color: #fff;
   text-align: center;
   padding: 30px 20px;
 }
@@ -102,8 +170,8 @@ h2 {
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
+  background-color: #2E9DF7; /* Primary Blue */
+  color: #fff;
   text-align: center;
   padding: 30px 20px;
 }
@@ -118,6 +186,7 @@ h2 {
 }
 
 /* Donate Button Styles */
+.btn,
 .donate-button {
   display: inline-block;
   background-color: #4FCB53; /* Green */
