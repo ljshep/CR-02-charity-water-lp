@@ -1,3 +1,21 @@
+/* Hover effect for the logo in the hero section */
+header.hero img[alt="Charity: Water Logo"] {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+header.hero img[alt="Charity: Water Logo"]:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 24px rgba(46, 157, 247, 0.25);
+}
+
+/* Hover effect for the dropdown menu */
+#nav-menu {
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+#nav-menu:hover, #nav-menu:focus {
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.18);
+  border-color: #2E9DF7;
+}
 /*
   Media Queries for Responsive Design
   Media queries help make your website look good on different screen sizes,
@@ -64,6 +82,11 @@
 /* Real Impact Section Title Styles */
 .real-impact h2 {
   color: #FFC907;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
 }
 /* Make the hero section larger so an image fits */
 .hero {
@@ -180,7 +203,7 @@ h2 {
 /* Style the impact story image */
 .impact-image {
   width: 100%;
-  max-width: 500px; /* Make Helen's photo much larger */
+  max-width: 1000px; /* Double the size for a 100% increase */
   border-radius: 10px;
   margin-bottom: 24px;
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
@@ -216,7 +239,6 @@ h2 {
 /* Remove spacing between sections so they touch */
 section {
   margin-bottom: 0;
-}
 }
 
 /* 
