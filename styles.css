@@ -1,3 +1,12 @@
+/* Make the hero section larger so an image fits */
+.hero {
+  width: 100%;
+  min-height: 400px; /* You can adjust this value to make it even larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f8ff; /* Light background for visibility */
+}
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
@@ -45,7 +54,7 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-image: url(img/1\ landing\ image.png);
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
